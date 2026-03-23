@@ -5,89 +5,81 @@
 <title>HSK Report</title>
 
 <style>
-body {
+body{
     background:#e6e6e6;
-    font-family: Times New Roman;
+    font-family: "Times New Roman";
 }
-
-.page {
-    width: 900px;
-    background: white;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid black;
+.page{
+    width:900px;
+    background:white;
+    margin:auto;
+    padding:20px;
+    border:1px solid black;
 }
-
-.header {
-    text-align: center;
+.header{
+    text-align:center;
 }
-
-.logo {
-    position: absolute;
-    left: 60px;
-    top: 40px;
-    width: 120px;
+.name-line{
+    border-bottom:1px solid black;
+    margin-top:10px;
 }
-
-.name-line {
-    border-bottom: 1px solid black;
-    margin: 10px 0;
-    padding-bottom: 5px;
+.info{
+    width:100%;
+    border-collapse:collapse;
 }
-
-.info-table {
-    width: 100%;
-    border-collapse: collapse;
+.info td{
+    border-bottom:1px solid black;
+    padding:6px;
 }
-
-.info-table td {
-    border-bottom: 1px solid black;
-    padding: 8px;
+.photo{
+    width:140px;
+    height:180px;
+    border:1px solid black;
 }
-
-.photo {
-    width: 140px;
-    height: 180px;
-    border: 1px solid black;
+.flex{
+    display:flex;
+    justify-content:space-between;
 }
-
-.score-table {
-    width: 60%;
-    border-collapse: collapse;
-    margin-top: 20px;
+.score-table{
+    width:48%;
+    border-collapse:collapse;
+    margin-top:20px;
 }
-
-.score-table th, .score-table td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
+.score-table td, .score-table th{
+    border:1px solid black;
+    padding:8px;
+    text-align:center;
 }
-
-.rank-table {
-    width: 35%;
-    border-collapse: collapse;
-    margin-top: 20px;
+.rank-table{
+    width:48%;
+    border-collapse:collapse;
+    margin-top:20px;
 }
-
-.rank-table th, .rank-table td {
-    border: 1px solid black;
-    padding: 6px;
-    text-align: center;
+.rank-table td, .rank-table th{
+    border:1px solid black;
+    padding:6px;
+    text-align:center;
 }
-
-.bottom {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.speaking{
+    width:48%;
+    border-collapse:collapse;
+    margin-top:20px;
 }
-
-.stamp {
-    width: 180px;
+.speaking td, .speaking th{
+    border:1px solid black;
+    padding:8px;
+    text-align:center;
 }
-
-.qr {
-    width: 120px;
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+}
+.qr{
+    width:120px;
+}
+.stamp{
+    width:180px;
 }
 </style>
 </head>
@@ -96,68 +88,104 @@ body {
 
 <div class="page">
 
-    <div class="header">
-        <h2>Chinese Proficiency Test</h2>
-        <h3>HSK (Level 4) Test Score Report</h3>
-    </div>
+<div class="header">
+    <h2>中文水平考试</h2>
+    <h3>Chinese Proficiency Test</h3>
+    <h3>HSK (四级) 成绩报告</h3>
+    <h4>HSK (Level 4) Test Score Report</h4>
+</div>
 
-    <div class="name-line">
-        Name: TANAWAR MOHIT
-    </div>
+<div class="name-line">
+    姓名 Name: TANAWAR MOHIT
+</div>
 
-    <table class="info-table">
-        <tr>
-            <td>Gender: Male</td>
-            <td>Nationality: India</td>
-            <td rowspan="3" align="center">
-                <img src="photo.jpg" class="photo">
-            </td>
-        </tr>
-        <tr>
-            <td>Test Date: 22 / 03 / 2026</td>
-            <td>Registration No: H42506056873</td>
-        </tr>
-        <tr>
-            <td>Admission Ticket No:</td>
-            <td>H42505834180000012</td>
-        </tr>
-    </table>
+<table class="info">
+<tr>
+<td>性别 Gender: 男</td>
+<td>国籍 Nationality: India</td>
+<td rowspan="3" align="center">
+<img src="photo.jpg" class="photo">
+</td>
+</tr>
+<tr>
+<td>考试时间 Test Date: 2026 / 03 / 22</td>
+<td>编号 No: H42506056873</td>
+</tr>
+<tr>
+<td>准考证号 Admission Ticket No:</td>
+<td>H42505834180000012</td>
+</tr>
+</table>
 
-    <div style="display:flex; justify-content:space-between;">
-        <table class="score-table">
-            <tr>
-                <th>Listening</th>
-                <th>Reading</th>
-                <th>Writing</th>
-                <th>Total</th>
-            </tr>
-            <tr>
-                <td>81</td>
-                <td>63</td>
-                <td>60</td>
-                <td>204</td>
-            </tr>
-        </table>
+<div class="flex">
+<table class="score-table">
+<tr>
+<th>项目</th>
+<th>满分</th>
+<th>你的分数</th>
+</tr>
+<tr>
+<td>听力 Listening</td>
+<td>100</td>
+<td>81</td>
+</tr>
+<tr>
+<td>阅读 Reading</td>
+<td>100</td>
+<td>63</td>
+</tr>
+<tr>
+<td>书写 Writing</td>
+<td>100</td>
+<td>60</td>
+</tr>
+<tr>
+<td>总分 Total</td>
+<td>300</td>
+<td>204</td>
+</tr>
+</table>
 
-        <table class="rank-table">
-            <tr><th>Total</th><th>Rank</th></tr>
-            <tr><td>287</td><td>99%</td></tr>
-            <tr><td>262</td><td>90%</td></tr>
-            <tr><td>247</td><td>80%</td></tr>
-            <tr><td>235</td><td>70%</td></tr>
-            <tr><td>222</td><td>60%</td></tr>
-            <tr><td>209</td><td>50%</td></tr>
-            <tr><td>195</td><td>40%</td></tr>
-            <tr><td>179</td><td>30%</td></tr>
-            <tr><td>162</td><td>20%</td></tr>
-            <tr><td>139</td><td>10%</td></tr>
-        </table>
-    </div>
+<table class="rank-table">
+<tr>
+<th>听力</th>
+<th>阅读</th>
+<th>书写</th>
+<th>总分</th>
+<th>百分等级</th>
+</tr>
+<tr><td>100</td><td>99</td><td>94</td><td>287</td><td>99%</td></tr>
+<tr><td>93</td><td>92</td><td>83</td><td>262</td><td>90%</td></tr>
+<tr><td>88</td><td>88</td><td>76</td><td>247</td><td>80%</td></tr>
+<tr><td>83</td><td>82</td><td>72</td><td>235</td><td>70%</td></tr>
+<tr><td>80</td><td>78</td><td>67</td><td>222</td><td>60%</td></tr>
+<tr><td>76</td><td>71</td><td>64</td><td>209</td><td>50%</td></tr>
+<tr><td>70</td><td>65</td><td>59</td><td>195</td><td>40%</td></tr>
+<tr><td>64</td><td>58</td><td>55</td><td>179</td><td>30%</td></tr>
+<tr><td>58</td><td>50</td><td>50</td><td>162</td><td>20%</td></tr>
+<tr><td>50</td><td>40</td><td>43</td><td>139</td><td>10%</td></tr>
+</table>
+</div>
 
-    <div class="bottom">
-        <img src="qr.png" class="qr">
-        <img src="stamp.png" class="stamp">
-    </div>
+<table class="speaking">
+<tr>
+<th>口语 Speaking</th>
+<th>满分 Full Score</th>
+<th>你的分数 Your Score</th>
+</tr>
+<tr>
+<td>中级 Intermediate</td>
+<td>100</td>
+<td>26</td>
+</tr>
+</table>
+
+<div class="bottom">
+    <img src="qr.png" class="qr">
+    <img src="stamp.png" class="stamp">
+</div>
+
+<p>Beijing - China</p>
 
 </div>
 
