@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HSK Test Score Report</title>
+    <title>HSK Report</title>
     <style>
         body {
-            background: #f0f0f0;
+            background: #e6e6e6;
             font-family: Times New Roman;
         }
+
         .page {
-            width: 800px;
+            width: 850px;
             background: white;
-            margin: auto;
+            margin: 20px auto;
             padding: 20px;
             border: 2px solid black;
         }
-        .title {
+
+        .header {
             text-align: center;
-            border-bottom: 1px solid black;
+            border-bottom: 2px solid black;
             padding-bottom: 10px;
         }
-        .info {
+
+        .top-section {
             display: flex;
             border-bottom: 1px solid black;
         }
-        .info-left {
-            width: 70%;
+
+        .left-info {
+            width: 75%;
             padding: 10px;
             border-right: 1px solid black;
         }
-        .info-right {
-            width: 30%;
-            padding: 10px;
+
+        .right-photo {
+            width: 25%;
             text-align: center;
+            padding: 10px;
         }
+
         .photo {
-            width: 120px;
-            height: 150px;
+            width: 130px;
+            height: 160px;
             border: 1px solid black;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
         }
+
         th, td {
             border: 1px solid black;
-            padding: 12px;
+            padding: 10px;
             text-align: center;
         }
-        .bottom {
+
+        .bottom-section {
             display: flex;
             justify-content: space-between;
-            margin-top: 30px;
+            margin-top: 40px;
+            border-top: 1px solid black;
             padding-top: 20px;
         }
+
         .stamp {
-            width: 150px;
+            width: 160px;
         }
+
         .qr {
             width: 120px;
         }
@@ -65,19 +77,20 @@
 
 <div class="page">
 
-    <div class="title">
-        <h2>HSK (Level 4) Test Score Report</h2>
-        <p>汉语水平考试成绩报告</p>
+    <div class="header">
+        <h2>Chinese Proficiency Test</h2>
+        <h3>HSK (Level 4) Test Score Report</h3>
     </div>
 
-    <div class="info">
-        <div class="info-left">
+    <div class="top-section">
+        <div class="left-info">
             <p><b>Name:</b> TANAWAR MOHIT</p>
-            <p><b>Test Level:</b> HSK Level 4</p>
+            <p><b>Nationality:</b> India</p>
             <p><b>Test Date:</b> 22 March 2026</p>
             <p><b>Registration No:</b> H42506056873</p>
         </div>
-        <div class="info-right">
+
+        <div class="right-photo">
             <img src="photo.jpg" class="photo">
         </div>
     </div>
@@ -97,7 +110,7 @@
         </tr>
     </table>
 
-    <div class="bottom">
+    <div class="bottom-section">
         <img src="stamp.png" class="stamp">
         <img src="qr.png" class="qr">
     </div>
