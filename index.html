@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HSK Report</title>
+    <title>HSK Test Score Report</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
+            background: #f0f0f0;
+            font-family: Times New Roman;
         }
         .page {
             width: 800px;
-            height: 1100px;
+            background: white;
             margin: auto;
-            background: url('background.jpg');
-            background-size: 100% 100%;
-            position: relative;
-            font-family: Arial;
+            padding: 20px;
+            border: 2px solid black;
         }
-        .name {
-            position: absolute;
-            top: 300px;
-            left: 150px;
+        .title {
+            text-align: center;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
         }
-        .level {
-            position: absolute;
-            top: 340px;
-            left: 150px;
+        .info {
+            display: flex;
+            border-bottom: 1px solid black;
         }
-        .date {
-            position: absolute;
-            top: 380px;
-            left: 150px;
+        .info-left {
+            width: 70%;
+            padding: 10px;
+            border-right: 1px solid black;
         }
-        .marks {
-            position: absolute;
-            top: 520px;
-            left: 200px;
-            font-size: 18px;
+        .info-right {
+            width: 30%;
+            padding: 10px;
+            text-align: center;
         }
         .photo {
-            position: absolute;
-            top: 280px;
-            right: 120px;
             width: 120px;
             height: 150px;
+            border: 1px solid black;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            border-top: 1px solid black;
+            padding-top: 20px;
+        }
+        .stamp {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 150px;
         }
         .qr {
-            position: absolute;
-            bottom: 150px;
-            right: 120px;
             width: 120px;
         }
     </style>
@@ -55,14 +70,44 @@
 <body>
 
 <div class="page">
-    <div class="name">TANAWAR MOHIT</div>
-    <div class="level">HSK Level 4</div>
-    <div class="date">2026-03-22</div>
 
-    <div class="marks">Listening 82 | Reading 76 | Writing 80 | Total 238</div>
+    <div class="title">
+        <h2>HSK Test Score Report</h2>
+        <p>汉语水平考试成绩报告</p>
+    </div>
 
-    <img src="photo.jpg" class="photo">
-    <img src="qr.png" class="qr">
+    <div class="info">
+        <div class="info-left">
+            <p>Name: RAHUL</p>
+            <p>Test Level: HSK Level 4</p>
+            <p>Test Date: 2023-10-15</p>
+            <p>Registration No: 123456789</p>
+        </div>
+        <div class="info-right">
+            <img src="photo.jpg" class="photo">
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Listening</th>
+            <th>Reading</th>
+            <th>Writing</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>82</td>
+            <td>76</td>
+            <td>80</td>
+            <td>238</td>
+        </tr>
+    </table>
+
+    <div class="bottom">
+        <div class="stamp">STAMP</div>
+        <img src="qr.png" class="qr">
+    </div>
+
 </div>
 
 </body>
